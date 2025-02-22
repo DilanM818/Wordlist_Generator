@@ -22,7 +22,7 @@ def get_html_of(url):
         print(f'HTTP status code {resp.status_code} returned, but 200 was expected. Exiting...')
         exit(1)  # Exit the program with an error code
 
-    return resp.content.decode()  # Decode the response content (usually UTF-8)
+    return resp.content.decode()  # Decode the response content 
 
 # Function to extract all words from the HTML content
 def get_all_words_from(url):
