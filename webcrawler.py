@@ -195,10 +195,10 @@ def main(url, length, output, depth, mutate, mutation_output):
     the_words = crawl_website(url, depth)  # Extract all words from the specified URL and crawled pages
     top_words = get_top_words_from(the_words, length)  # Get the top words based on frequency and minimum length
 
+    num_words_to_print = min(10, len(top_words)) # Determine the number of top words to print (max 10, or fewer if less than 10 words found)
     if not top_words: # If no words were found that meet the criteria
         print('\nNo words found matching the minimum length criteria\n')
     else: # If top words were found
-        num_words_to_print = min(10, len(top_words)) # Determine the number of top words to print (max 10, or fewer if less than 10 words found)
         print('\nTOP WORDS')
         for i in range(num_words_to_print):
             print(f'{top_words[i][0]}: {top_words[i][1]}') # Print the top words and their counts
