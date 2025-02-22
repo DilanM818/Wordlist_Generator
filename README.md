@@ -25,7 +25,7 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 python3 webcrawler.py [Options]
 
 Options:
-  -u, --url <TEXT>               URL of webpage to extract from.  [required]
+  -u, --url <TEXT>               URL of webpage to extract from  [required]
   -l, --length <INTEGER>         Minimum word length (default: 0, no limit)
   -o, --output <TEXT>            Output file to save results
   -d, --depth <INTEGER>          Crawling depth (default: 0, only searches given URL)
