@@ -29,7 +29,7 @@ Options:
   -l, --length <INTEGER>         Minimum word length (default: 0, no limit)
   -o, --output <TEXT>            Output file to save results
   -d, --depth <INTEGER>          Crawling depth (default: 0, only searches given URL)
-  -m, --mutate                   Generate and output common password mutations.
+  -m, --mutate                   Generate and output common password mutations
   -mo, --mutation-output <TEXT>  Output file to save password mutations
   --help                         
 ```
