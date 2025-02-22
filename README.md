@@ -21,7 +21,7 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 
   **Clone the repository:**
     ```
-    git clone https://github.com/DilanM818/Web--Crawler
+    git clone https://github.com/DilanM818/Web-Crawler
     ```
 ## Usage
 
