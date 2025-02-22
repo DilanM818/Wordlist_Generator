@@ -21,8 +21,7 @@ def get_html_of(url):
     resp = requests.get(url)  # Make the HTTP request to the specified URL
 
     if resp.status_code != 200:  # Check if the HTTP request was successful (status code 200 OK)
-        print()
-        print(f'HTTP status code {resp.status_code} returned, but 200 was expected. Exiting...\n')
+        print(f'\nHTTP status code {resp.status_code} returned, but 200 was expected. Exiting...\n')
         exit(1)  # Exit the program with an error code 
 
     return resp.content.decode()  # Decode the response content (usually from bytes to a string, typically UTF-8 encoding)
@@ -40,6 +39,7 @@ def get_all_words_from(url):
     html = get_html_of(url)  # Fetch the HTML content of the URL
     soup = BeautifulSoup(html, 'html.parser')  # Parse the HTML content using BeautifulSoup's HTML parser
     raw_text = soup.get_text()  # Extract all text content from the HTML, discarding HTML tags
+    
     return re.findall(r'\w+', raw_text)  # Find all 'words' (sequences of alphanumeric characters and underscores) using a regular expression
 
 def count_occurrences_in(word_list, min_length):
@@ -48,7 +48,7 @@ def count_occurrences_in(word_list, min_length):
 
     Args:
         word_list (list): A list of words (strings).
-        min_length (int): The minimum length a word must have to be counted.
+        min_length (int): The minimum length a word to be counted.
 
     Returns:
         dict: A dictionary where keys are words (of at least min_length) and values are their counts.
@@ -59,7 +59,7 @@ def count_occurrences_in(word_list, min_length):
         if len(word) >= min_length:  # Check if the current word meets the minimum length requirement
             word_count[word] = word_count.get(word, 0) + 1  # Increment the count for the word.
                                                                # .get(word, 0) safely retrieves the current count (or 0 if word not yet in dict)
-
+    
     return word_count  # Return the dictionary containing word counts
 
 def crawl_website(start_url, depth, current_depth=0, visited=None):
@@ -225,7 +225,7 @@ def main(url, length, output, depth, mutate, mutation_output):
         if mutate: # Check if mutation generation was actually enabled
             try:
                 with open(mutation_output, 'w') as wr_mut: # Open the mutation output file in write mode ('w')
-                    wr_mut.write('PASSWORD MUTATIONS:\n') # Write a header to the mutation output file
+                    wr_mut.write('PASSWORD MUTATIONS\n') # Write a header to the mutation output file
                     for word, mutations in mutated_passwords.items(): # Iterate through the mutated passwords dictionary
                         wr_mut.write(f'\nMutations for {word}:\n') # Write a sub-header for each word's mutations
                         for mutation in mutations: # Iterate through the list of mutations for the current word
@@ -235,7 +235,6 @@ def main(url, length, output, depth, mutate, mutation_output):
                 print(f'Error writing to mutation output file: {e}') # Print an error message
         else: # If mutation output file is specified but mutation generation was not enabled
             print('\nWarning: Mutation output file specified (--mutation-output), but mutation generation (--mutate) was not enabled. No mutations will be saved.')
-
 
 if __name__ == '__main__':
     main()  # Run the main function when the script is executed directly
