@@ -7,8 +7,6 @@ from bs4 import BeautifulSoup  # For parsing HTML content (for easy HTML manipul
 from urllib.parse import urljoin # For intelligently joining relative and absolute URLs
 import datetime # For getting the current year for password mutations
 
-# --- Helper Functions ---
-
 def get_html_of(url):
     """
     Fetches the HTML content of a given URL.
@@ -25,7 +23,7 @@ def get_html_of(url):
     if resp.status_code != 200:  # Check if the HTTP request was successful (status code 200 OK)
         print()
         print(f'HTTP status code {resp.status_code} returned, but 200 was expected. Exiting...\n')
-        exit(1)  # Exit the program with an error code (1 indicates an error)
+        exit(1)  # Exit the program with an error code 
 
     return resp.content.decode()  # Decode the response content (usually from bytes to a string, typically UTF-8 encoding)
 
