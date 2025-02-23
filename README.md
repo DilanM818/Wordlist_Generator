@@ -30,7 +30,7 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 1.  **Clone the repository (or download the script):**
 
     ```bash
-    git clone https://github.com/DilanM818/Wordlist_Generator # Replace [repository URL] with the actual repository URL if you have one.
+    git clone https://github.com/DilanM818/Wordlist_Generator 
     cd Wordlist_Generator   # Navigate to the directory where the script is located.
     ```
 
@@ -67,7 +67,7 @@ Options:
 *   **Run the script and get top words from a URL, prompting for the URL:**
 
     ```bash
-    ./wordlist_generator.py
+    ./wordlist_generator.py -u http://example.com
     ```
 
 *   **Run the script, specify the URL and minimum word length, and output top words to a file:**
