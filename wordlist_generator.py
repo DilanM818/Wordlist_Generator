@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-import requests  # For making HTTP requests to fetch web pages
-import re      # For regular expressions (used for word extraction)
-import click     # For creating command-line interfaces
 from bs4 import BeautifulSoup  # For parsing HTML content (for easy HTML manipulation)
-from urllib.parse import urljoin # For joining relative and absolute URLs
+import click     # For creating command-line interfaces
 import datetime # For getting the current year for password mutations
+import re      # For regular expressions (used for word extraction)
+import requests  # For making HTTP requests to fetch web pages
+from urllib.parse import urljoin # For joining relative and absolute URLs
 
 def get_html_of(url):
     """
