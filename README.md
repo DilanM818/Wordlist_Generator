@@ -29,11 +29,11 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 ### Prerequisites
 
 *   **Python 3.x:**  Ensure you have Python 3 installed on your system.
-*   **Required Python Libraries:** Install the necessary libraries using pip:
+*   **Required Python Libraries:** 
+    `requests`
+    `beautifulsoup4`
+    `click`
 
-    ```bash
-    pip install requests beautifulsoup4 click
-    ```
 
 ### Running the Script
 
