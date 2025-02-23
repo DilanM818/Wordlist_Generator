@@ -33,6 +33,4 @@ Options:
   -mo, --mutation-output <TEXT>  Output file to save password mutations
   --help                         
 ```
-**Disclaimer:**
 
-**Use this tool responsibly and ethically.**  Password generation based on website content should be used for security research, penetration testing (with proper authorization), and educational purposes.  **Do not use this tool for illegal activities or unauthorized access to systems.**  The generated passwords are based on common patterns and may not be effective against sophisticated password policies.
