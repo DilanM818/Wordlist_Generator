@@ -30,8 +30,8 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 1.  **Clone the repository (or download the script):**
 
     ```bash
-    git clone [repository URL] # Replace [repository URL] with the actual repository URL if you have one.
-    cd [repository directory]   # Navigate to the directory where the script is located.
+    git clone https://github.com/DilanM818/Wordlist_Generator # Replace [repository URL] with the actual repository URL if you have one.
+    cd Wordlist_Generator   # Navigate to the directory where the script is located.
     ```
 
 2.  **Make the script executable (if necessary on Linux/macOS):**
