@@ -1,6 +1,16 @@
 # Web Wordlist Generator and Password Mutator
 
-**Warning: This script is intended for educational and ethical security testing purposes ONLY. Misuse for unauthorized activities is illegal and unethical. The author is not responsible for any misuse.**
+## Ethical Use and Disclaimer
+
+**IMPORTANT:** This script is intended for legitimate security testing and educational purposes only. Using this script to access or attempt to gain unauthorized access to systems or information is illegal and unethical.
+
+*   **Use with Permission:** Only use this script on websites you own or have explicit permission to test.
+*   **Ethical Considerations:** Be mindful of the ethical implications of password cracking and security testing.
+*   **No Guarantee of Success:** This script generates potential password candidates based on website content. There is no guarantee that these mutations will successfully crack any passwords.
+  
+**The author is not responsible for any misuse of this script. By using this script, you agree to use it responsibly and ethically, and you acknowledge the potential legal and ethical consequences of misuse.**
+
+## Description
 
 This Python script is a command-line tool that crawls a website, extracts the most frequent words from its content, and optionally generates common password mutations based on those words. It is designed to aid in security assessments and password cracking exercises (for ethical purposes only, such as penetration testing with explicit permission).
 
@@ -27,14 +37,14 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 
 ### Running the Script
 
-1.  **Clone the repository (or download the script):**
+1.  **Clone the repository:**
 
     ```bash
     git clone https://github.com/DilanM818/Wordlist_Generator 
     cd Wordlist_Generator   # Navigate to the directory where the script is located.
     ```
 
-2.  **Make the script executable (if necessary on Linux/macOS):**
+2.  **Make the script executable (shown on Linux):**
 
     ```bash
     chmod +x wordlist_generator.py
@@ -81,13 +91,3 @@ Options:
     ```bash
     ./wordlist_generator.py -u http://example.com -d 1 -m -o top_words.txt -mo mutations.txt
     ```
-
-## Ethical Use and Disclaimer
-
-**IMPORTANT:** This script is intended for legitimate security testing and educational purposes only. Using this script to access or attempt to gain unauthorized access to systems or information is illegal and unethical.
-
-*   **Use with Permission:** Only use this script on websites you own or have explicit permission to test.
-*   **Ethical Considerations:** Be mindful of the ethical implications of password cracking and security testing.
-*   **No Guarantee of Success:** This script generates potential password candidates based on website content. There is no guarantee that these mutations will successfully crack any passwords.
-
-**The author is not responsible for any misuse of this script. By using this script, you agree to use it responsibly and ethically, and you acknowledge the potential legal and ethical consequences of misuse.**
