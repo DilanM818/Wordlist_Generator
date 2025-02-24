@@ -8,7 +8,7 @@
 *   **Ethical Considerations:** Be mindful of the ethical implications of password cracking and security testing.
 *   **No Guarantee of Success:** This script generates potential password candidates based on website content. There is no guarantee that these mutations will successfully crack any passwords.
   
-**The author is not responsible for any misuse of this script. By using this script, you agree to use it responsibly and ethically, and you acknowledge the potential legal and ethical consequences of misuse.**
+**By using this script, you agree to use it responsibly and ethically, and you acknowledge the potential legal and ethical consequences of misuse.**
 
 ## Description
 
