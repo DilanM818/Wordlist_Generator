@@ -41,7 +41,7 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 
     ```bash
     git clone https://github.com/DilanM818/Wordlist_Generator 
-    cd Wordlist_Generator   # Navigate to the directory where the script is located.
+    cd Wordlist_Generator   
     ```
 
 2.  **Make the script executable (shown on Linux):**
