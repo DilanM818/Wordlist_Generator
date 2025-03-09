@@ -19,7 +19,7 @@ This Python script is a command-line tool that crawls a website, extracts the mo
 *   **Web Crawling:** Crawls a website starting from a given URL, up to a specified depth, following links to discover more pages.
 *   **Word Extraction:** Extracts all words from the HTML content of crawled web pages, discarding HTML tags and focusing on text content.
 *   **Word Frequency Analysis:** Counts the occurrences of words and identifies the most frequent words on the website.
-*   **Minimum Word Length Filtering:** Allows you to specify a minimum length for words to be considered in the frequency analysis.
+*   **Minimum Word Length Filtering:** Allows you to specify the minimum length for words to be considered in the frequency analysis.
 *   **Password Mutation Generation:** Generates common password mutations based on the top words, including capitalization, appending years, symbols, numbers, and seasonal words.
 *   **Output to File:**  Saves the list of top words and/or generated password mutations to separate output files.
 *   **Command-Line Interface:** Uses `click` for a user-friendly command-line interface with options for URL, depth, minimum word length, output files, and mutation generation.
@@ -68,7 +68,7 @@ Options:
   -o, --output <TEXT>            Output file to save results
   -d, --depth <INTEGER>          Crawling depth (default: 0, only searches given URL)
   -m, --mutate                   Generate and output common password mutations
-  -mo, --mutation-output <TEXT>  Output file to save password mutations
+  -mo, --mutation-output <TEXT>  Output file to save password mutations, *Note: if enabled, you must use -m as well, e.g. -m -mo*
   --help
 ```
 
