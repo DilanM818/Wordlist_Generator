@@ -5,7 +5,7 @@
 **IMPORTANT:** This script is intended for legitimate security testing and educational purposes only. Using this script to access or attempt to gain unauthorized access to systems or information is illegal and unethical.
 
 *   **Use with Permission:** Only use this script on websites you own or have explicit permission to test.
-*   **Ethical Considerations:** Be mindful of the ethical implications of password cracking and security testing.
+*   **Considerations:** Be mindful of the implications of password cracking and security testing.
 *   **No Guarantee of Success:** This script generates potential password candidates based on website content. There is no guarantee that these mutations will successfully crack any passwords.
   
 **By using this script, you agree to use it responsibly and ethically, and you acknowledge the potential legal and ethical consequences of misuse.**
